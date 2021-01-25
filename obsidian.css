@@ -114,6 +114,18 @@
     border-radius: 4px;
   }
   
+  /* NOTE: Setting a max-width will shift the scroll */
+  /* Change the large pixel value to set maximum width */
+  .markdown-preview-view {
+    padding: 0 calc((100% - 800px) / 2);
+    margin: auto;
+  }
+  
+  .markdown-preview-view > *{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
   .markdown-preview-view .task-list-item-checkbox {
     -webkit-appearance: none;
     box-sizing: border-box;
@@ -211,28 +223,28 @@
   h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
     font-weight: 600;
   }
-
+  
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.2em !important;
   }
-
+  
   h3, h4, h5, h6 {
     font-weight: 400;
   }
-
+  
   h1 { font-size: 42px !important; color: var(--header-normal); }
   h1:after { content:' '; display:block; margin-top: 12px; border:1px solid var(--background-modifier-border); }
-
+  
   h2 { font-size: 28px !important; margin-top: 32px !important;}
   h2:after { content:' '; display:block; margin-top: 12px; border:1px solid var(--background-modifier-border); max-width: 60%; }
-
+  
   h3 { font-size: 22px !important; margin-bottom: -8px !important; }
   h4 { font-size: 18px !important; }
   h5 { font-size: 16px !important; }
   h6 { font-size: 12px !important; }
-
+  
   p { line-height: 1.5em !important; }
-
+  
   .workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
     border: none;
   }
